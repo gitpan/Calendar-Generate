@@ -1,0 +1,5 @@
+
+	This is a quick and dirty module for generating formatted calendars.
+The origional source was written by Matthew Darwin.  I found it via Google 
+some time ago and used a hacked up version for a web application I was working 
+on.  I finally decided that it was useful enough to warrant a CPAN module.
