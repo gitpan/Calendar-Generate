@@ -10,7 +10,7 @@ use Date::Calc qw(Day_of_Week Days_in_Month Month_to_Text Day_of_Week_to_Text);
 # and/or modify it under the same terms as Perl itself.
 #
 
-$VERSION='0.61';
+$VERSION='0.62';
 
 sub new {
 	my $class = shift;
@@ -332,6 +332,8 @@ Calendar::Generate - Rule based calendar generation.
 
 =head1 SYNOPSIS
 
+This is alpha code.  API is subject to (and will) change.
+
  # The easy way.
 
  use Calendar::Generate;
@@ -382,7 +384,7 @@ Calendar::Generate creates a calendar formatted based on rules that you provide.
 
 =head2 Setting rules
 
- $calendar->rules( { param => value, ...);
+ $calendar->rules( { param => value, ... } );
 
 =head1 FORMATTING RULES
 
