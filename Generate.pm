@@ -10,7 +10,7 @@ use Date::Calc qw(Day_of_Week Days_in_Month Month_to_Text Day_of_Week_to_Text);
 # and/or modify it under the same terms as Perl itself.
 #
 
-$VERSION='0.62';
+$VERSION='0.64';
 
 sub new {
 	my $class = shift;
@@ -332,7 +332,7 @@ Calendar::Generate - Rule based calendar generation.
 
 =head1 SYNOPSIS
 
-This is alpha code.  API is subject to (and will) change.
+This is alpha code.  API is subject to (and will) change.  While it was released with the hope that it might be useful, it was written to solve a specific problem.
 
  # The easy way.
 
@@ -346,31 +346,31 @@ This is alpha code.  API is subject to (and will) change.
  use Calendar::Generate;
  
  my $calendar = new Calendar::Generate;
- $calendar->rules( 
-      -month_header => "<TABLE>\n",
-      -title_start => '<TR><TD COLSPAN=7 ALIGN=CENTER>',
-      -title_end => "</TD></TR>\n",
-      -title_center => 1,
-      -title_text => undef,
-      -row_start => '<TR> ',
-      -row_end => "</TR>\n",
-      -space_start => '<TD>&nbsp;',
-      -space_char => '',
-      -space_end => '&nbsp;&nbsp;&nbsp;</TD>',
-      -highlight_start => '<TD>&nbsp;<B>',
-      -highlight_end => '</B>&nbsp;</TD>',
-      -digit_start => '<TD>&nbsp;',
-      -digit_end => '&nbsp;</TD>',
-      -dow_start => '<TH WIDTH=14%> ',
-      -dow_end => '&nbsp;</TH>',
-      -dow_length => 3,
-      -month_footer => "</TABLE>\n",
-      -data_use => 0,
-      -data_start => '',
-      -data_end => '',	
-      -data_null => '',
-      -data_place => 1
- );
+ $calendar->rules( {
+      month_header => "<TABLE>\n",
+      title_start => '<TR><TD COLSPAN=7 ALIGN=CENTER>',
+      title_end => "</TD></TR>\n",
+      title_center => 1,
+      title_text => undef,
+      row_start => '<TR> ',
+      row_end => "</TR>\n",
+      space_start => '<TD>&nbsp;',
+      space_char => '',
+      space_end => '&nbsp;&nbsp;&nbsp;</TD>',
+      highlight_start => '<TD>&nbsp;<B>',
+      highlight_end => '</B>&nbsp;</TD>',
+      digit_start => '<TD>&nbsp;',
+      digit_end => '&nbsp;</TD>',
+      dow_start => '<TH WIDTH=14%> ',
+      dow_end => '&nbsp;</TH>',
+      dow_length => 3,
+      month_footer => "</TABLE>\n",
+      data_use => 0,
+      data_start => '',
+      data_end => '',	
+      data_null => '',
+      data_place => 1
+ } );
 
  print $calendar->generate( 2004, 12, 25 );
 
@@ -499,6 +499,10 @@ This is a set of attributes which will make the output print well in
 a table compliant web browser.  It also works in the Lynx text browser.
 
 =back
+
+=head1 ACKNOWLEDGEMENTS
+
+Emanuele Zeppieri - Errors in the POD examples.
 
 =head1 AUTHOR
 
