@@ -10,7 +10,7 @@ use Date::Calc qw(Day_of_Week Days_in_Month Month_to_Text Day_of_Week_to_Text);
 # and/or modify it under the same terms as Perl itself.
 #
 
-$VERSION='0.64';
+$VERSION='0.65';
 
 sub new {
 	my $class = shift;
@@ -390,91 +390,91 @@ Calendar::Generate creates a calendar formatted based on rules that you provide.
 
 =over 4
 
-=item -month_header
+=item month_header
 
 Printed before the calendar.
 
-=item -title_start
+=item title_start
 
 The left of the month title.
 
-=item -title_end
+=item title_end
 
 The right of the month title.
 
-=item -title_center
+=item title_center
 
 Define this to center the month title.
 
-=item -row_start
+=item row_start
 
 For before every row in the calendar (excluding title).
 
-=item -row_end
+=item row_end
 
 For the end of every row in the calendar (excuding title).
 
-=item -space_start
+=item space_start
 
 Formatting start for a blank entry.
 
-=item -space_char
+=item space_char
 
 Chracter to use for a blank space.
 
-=item -space_end
+=item space_end
 
 Formatting for use at the end of a blank entry.
 
-=item -highlight_start
+=item highlight_start
 
 Formatting for the start of a highlighted entry.
 
-=item -highlight_end
+=item highlight_end
 
 ... and the end of a highlighted entry.
 
-=item -digit_start
+=item digit_start
 
 Formatting used before the printing of the day number.
 
-=item -digit_end
+=item digit_end
 
 ... and the end of the day number.
 
-=item -dow_start
+=item dow_start
 
 Formatting for the start of a day of the week.
 
-=item -dow_end
+=item dow_end
 
 ... are you starting to see a pattern here?
 
-=item -dow_length
+=item dow_length
 
 The number of letters of the day of the week to print.
 
-=item -month_footer
+=item month_footer
 
 Printed at the end of the calendar.
 
-=item -data_use
+=item data_use
 
 Determines if data associated with each date should be printed (0 = no, 1 = yes/don't print nulls, 2 = yes/print nulls)
 
-=item -data_null
+=item data_null
 
 The data to use for a day that has no associated data.
 
-=item -data_start
+=item data_start
 
 Formatting for the start of a data item.
 
-=item -data_end
+=item data_end
 
 ... and the end.
 
-=item -data_place
+=item data_place
 
 determines where data item should be placed (0 = before, 1 = after)
 
