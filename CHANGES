@@ -1,16 +1,5 @@
 
-Revision history for Date::Calendar::Generate
+
+0.7 - Reworked the module from a flaming bag of dookey to a more managable system.
+
 0.6	- First distributable version.
-
-Revision history for origional Perl extension Date::Calendar.
-0.04  Sat Oct 24 21:41:32 EDT 1998
-	- changed from using Date::DateCalc to Date::Calc
-
-0.03  Mon Jul 27 18:51:42 EDT 1998
-	- fixed makefile
- 
-0.02  Sun Jun 15 16:48:20 EDT 1997
-	- methods for adding data
- 
-0.01  Sat Jun  7 19:14:36 EDT 1997
-	- original version; alpha software

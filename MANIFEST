@@ -1,5 +1,8 @@
 CHANGES
-Generate.pm
+lib/Calendar/Generate.pm
+lib/Calendar/Generate/HTML.pm
+lib/Calendar/Generate/Text.pm
 Makefile.PL
 MANIFEST
 t/1.t
+META.yml                                 Module meta-data (added by MakeMaker)
